@@ -4,7 +4,7 @@ RUN git clone https://github.com/Movses555/vprofile-project.git
 RUN cd vprofile-project && git checkout docker && mvn install
 
 
-FROM tomcat:9-fre11 
+FROM tomcat:9-jre11 
 LABEL "Project"="Vprofile"
 LABEL "Author"="Movses"
 RUN rm -rf /usr/local/tomcat/webapps/*
